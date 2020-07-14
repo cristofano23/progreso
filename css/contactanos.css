@@ -1,0 +1,89 @@
+/*contenido*/
+
+
+.contenido{
+	background: #f4f4f4;
+	margin: 250px 70px;
+	position: relative;
+	padding: 150px;
+	border-radius: 30px;
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr);
+}
+
+.texto{
+	text-align: center;
+	margin-bottom: 70px;
+	position: absolute;
+	left: 50%;
+	top: 8%;
+	transform: translateX(-50%);
+}
+
+.formulario{
+	position: relative;
+}
+
+.formulario input[type="text"] , input[type="email"]{
+	width: 50%;
+	margin-bottom: 25px;
+	padding: 5px;
+	border: 0;
+	background: transparent;
+	border-bottom:2px solid #ee4301;
+	transition: .5s ease;
+	cursor: text;
+}
+
+.formulario input:focus{
+	width: 60%;
+	transition: .5s ease;
+	border-bottom: 2px solid #FF4301;
+	outline: none;
+}
+
+.formulario textarea{
+	resize: none;
+	width: 400px;
+	height: 150px;
+	cursor: text;
+	margin-bottom: 20px;
+	outline: none;
+	border:2px solid #FF4301;
+	background: none;
+	padding: 15px;
+}
+
+.formulario input[type="submit"]{
+
+	padding: 10px 60px;
+	margin-left: 45%;
+	transform: translateX(-50%);
+	border:none;
+	background: none;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	border:2px solid #FF4301;
+}
+
+.formulario input[type="submit"]:hover{
+	background: linear-gradient(90deg , #FF4301 , #f0a500);
+	color:#fff;
+}
+
+.imagen{
+	position: absolute;
+	left: 50%;
+}
+
+.mensaje{
+	grid-column-start: span 2;
+	margin-top: 100px;
+
+}
+
+.mensaje span{
+	font-size: 35px;
+	color: red;
+}
